@@ -1,0 +1,39 @@
+@font-face {
+    font-family: Copse;
+    src: url("../font/Copse/Copse-Regular.ttf");
+}
+.preview{
+    width: 2480px;
+    height: 3508px;
+    padding: 100px;
+    overflow: hidden;
+    background-color: #fff;
+    font-size: 70px;
+    zoom:20%;
+    margin: 10% auto;
+    font-family: Copse;
+    color: #191919;
+}
+.info-user{
+    font-size: 75px;
+}
+.firstname, .lastname{
+    font-size: 130px;
+}
+h2{
+    margin-bottom: 30px;
+}
+
+.preview-exp-form{
+    margin-bottom: 20px;
+}
+.preview-name{
+    font-size: 80px;
+}
+.preview-date{
+    font-weight: bold;
+    margin-right: 40px;
+}
+.preview_skill span{
+    margin-right: 40px;
+}

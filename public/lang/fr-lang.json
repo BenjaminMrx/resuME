@@ -1,0 +1,13 @@
+{
+  "lang": {
+    "firstName" : "Prénom",
+    "lastName" : "Nom",
+    "birthDate" : "Date de naissance",
+    "mail" : "Adresse mail",
+    "tel" : "Numéro de téléphone",
+    "address" : "Adresse",
+    "postCode" : "Code postal",
+    "city" : "Ville",
+    "website" : "Site web"
+  }
+}

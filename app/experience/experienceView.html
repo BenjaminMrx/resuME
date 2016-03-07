@@ -1,0 +1,18 @@
+<div class="experience section">
+    <h2>Expériences</h2>
+    <div class="exp-form" ng-repeat="experience in experiences">
+        <div class="bouton-close icon-close"  ng-click="close(experience)"></div>
+        <div class="form_line two_element">
+            <input type="text" ng-model="experience.date_deb" ng-change="change()" placeholder="Début">
+            <input type="text" ng-model="experience.date_fin" ng-change="change()" placeholder="Fin">
+        </div>
+        <div class="form_line one_element">
+            <input type="text" ng-model="experience.name" ng-change="change()" placeholder="Entreprise">
+        </div>
+        <div class="form_line one_element">
+            <textarea name="" rows="4"  ng-model="experience.content" ng-change="change()" placeholder="Description"></textarea>
+        </div>
+    </div>
+    <div class="bouton-add icon-plus" ng-click="add()"></div>
+</div>
+</div>

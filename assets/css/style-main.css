@@ -1,0 +1,161 @@
+@font-face {
+    font-family: Oxygen;
+    src: url("../font/Oxygen/Oxygen-Regular.ttf");
+}@font-face {
+    font-family: OxygenLight;
+    src: url("../font/Oxygen/Oxygen-Light.ttf");
+}
+
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: OxygenLight;
+}
+* {
+    box-sizing: border-box;
+}
+.clear {
+    clear: both;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-color: #47a653;
+}
+nav{
+    width: 80px;
+    height: 100%;
+    float: left;
+    background-color: #051306;
+}
+nav img{
+    margin: 25px 0 0;
+}
+nav .menu{
+    list-style: none;
+    margin: 0;
+    padding:0;
+    text-align: center;
+
+}
+nav .menu a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin: 25px 0;
+
+}
+nav .menu i{
+    font-size: 35px;
+}
+.sections{
+    width: calc( 50% - 80px);
+    height: 100%;
+    background-color: #1a6724;
+    overflow-y: auto;
+    float: left;
+    padding: 50px 6%;
+}
+.sections h2{
+    text-align: center;
+    font-size: 40px;
+    color: #8ab886;
+}
+.container-preview{
+    float: left;
+    width: 50%;
+}
+.form_line{
+    min-height: 50px;
+    margin: 25px 0;
+}
+.bouton-close{
+    color: #8ab886;
+}
+.bouton-add{
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    color: #8ab886;
+    margin: 0 auto;
+    line-height:50px;
+    text-align: center;
+}
+.monBouton::before{
+    margin:0 !important;
+}
+.skill .monBouton{
+    margin:0 !important;
+    float: left;
+}
+input[type='text'], input[type='date']{
+    height: 50px;
+    padding-left: 10px;
+    font-size: 18px;
+    float: left;
+    background-color: #8ab886;
+    border: none;
+}
+input[type='checkbox']{
+    width:50px;
+    height: 50px;
+    margin: 0;
+    float: left;
+}
+textarea{
+    background-color: #8ab886;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px;
+    font-family: Arial;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #404040;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: #404040;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: #404040;
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: #404040;
+}
+.one_element input[type='text'], .one_element input[type='date']{
+    width:  100% ;
+}
+.two_element input[type='text'], .two_element input[type='date']{
+    width: calc( 50% - 10px );
+}
+.section:not(.user) .two_element input:first-child {
+    margin-right: 20px;
+}
+
+
+.user .one_element input[type='text'], .user .one_element input[type='date']{
+    width: calc( 100% - 50px );
+}
+.user .two_element input[type='text'], .user .two_element input[type='date']{
+    width: calc( 50% - 60px );
+}
+.user .two_element input:nth-child(2) {
+    margin-right: 20px;
+}
+.exp-form:not(:nth-child(2))::before{
+    content: "";
+    background-color: #8ab886;
+    width:150px;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+}
+.skill input{
+    margin: 0 10px 10px 0;
+}
+.hobby textarea{
+    margin-bottom: 20px;
+}

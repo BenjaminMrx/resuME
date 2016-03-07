@@ -1,0 +1,17 @@
+<div class="formation section">
+    <h2>Formation</h2>
+    <div class="exp-form" ng-repeat="formation in formations">
+        <div class="bouton-close icon-close"  ng-click="close(formation)"></div>
+        <div class="form_line two_element">
+            <input type="text" ng-model="formation.date_deb" ng-change="change()" placeholder="Début">
+            <input type="text" ng-model="formation.date_fin" ng-change="change()" placeholder="Fin">
+        </div>
+        <div class="form_line one_element">
+            <input type="text" ng-model="formation.name" ng-change="change()" placeholder="Ecole">
+        </div>
+        <div class="form_line one_element">
+            <textarea name="" rows="4"  ng-model="formation.content" ng-change="change()" placeholder="Description"></textarea>
+        </div>
+    </div>
+    <div class="bouton-add icon-plus" ng-click="add()"></div>
+</div>

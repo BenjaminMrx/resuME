@@ -1,0 +1,81 @@
+<div class="user section">
+    <h2>Informations personnelles</h2>
+
+    <div class="form_layout">
+
+        <div class="form_line one_element">
+            <input  type="checkbox" ng-model="user.checked_firstname" ng-init="user.checked_firstname=true">
+            <input id="text_firstname"
+                   type="text"
+                   placeholder="Prénom"
+                   ng-model="user.firstname"
+                   ng-change="change()">
+        </div>
+
+        <div class="form_line one_element">
+            <input type="checkbox" ng-model="user.checked_lastname">
+            <input id="text_lastname"
+                   type="text"
+                   placeholder="Nom"
+                   ng-model="user.lastname">
+        </div>
+
+        <div class="form_line two_element">
+            <input type="checkbox" ng-model="user.checked_age">
+            <input id="text_birth_date"
+                   type="date"
+                   placeholder="Date de naissance"
+                   ng-model="user.birth_date"
+                   ng-change="change()">
+            <input type="checkbox" ng-model="user.checked_tel">
+            <input id="text_tel"
+                   type="text"
+                   placeholder="Téléphone portable"
+                   ng-model="user.tel">
+        </div>
+
+        <div class="form_line one_element">
+            <input type="checkbox" ng-model="user.checked_mail">
+            <input id="text_mail"
+                   type="text"
+                   placeholder="Adresse mail"
+                   ng-model="user.mail">
+        </div>
+
+        <div class="form_line one_element">
+            <input type="checkbox" ng-model="user.checked_website">
+            <input id="text_website"
+                   type="text"
+                   placeholder="Site internet   "
+                   ng-model="user.website">
+        </div>
+
+        <div class="form_line one_element">
+            <input type="checkbox" ng-model="user.checked_address">
+            <input id="text_address"
+                   class="text_address"
+                   type="text"
+                   placeholder="Adresse"
+                   ng-model="user.address">
+        </div>
+
+        <div class="form_line two_element">
+            <input type="checkbox" ng-model="user.checked_postcode">
+            <input id="text_postcode"
+                   type="text"
+                   placeholder="Code postal"
+                   ng-model="user.postcode">
+            <input type="checkbox" ng-model="user.checked_city">
+            <input id="text_city"
+                   type="text"
+                   placeholder="Ville"
+                   ng-model="user.city">
+
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+    <div class="monBouton" ng-click="save()"></div>
+</div>

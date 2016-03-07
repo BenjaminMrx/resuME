@@ -1,0 +1,68 @@
+<div class="info-user">
+    <span class="firstname"
+         ng-hide="!user.checked_firstname"  >
+        {{user.firstname}}
+    </span>
+    <span class="lastname"
+         ng-hide="!user.checked_lastname">
+        {{user.lastname}}
+    </span>
+    <div class="age"
+         ng-hide="!user.checked_age">
+        {{user.age}}
+    </div>
+    <div class="tel"
+         ng-hide="!user.checked_tel">
+        {{user.tel}}
+    </div>
+    <div class="mail"
+         ng-hide="!user.checked_mail">
+        {{user.mail}}
+    </div>
+    <div class="website"
+         ng-hide="!user.checked_website">
+        {{user.website}}
+    </div>
+    <div class="address"
+         ng-hide="!user.checked_address">
+        {{user.address}}
+    </div>
+    <span class="postcode"
+         ng-hide="!user.checked_postcode">
+        {{user.postcode}}
+    </span>
+    <span class="city"
+         ng-hide="!user.checked_city">
+        {{user.city}}
+    </span>
+</div>
+<div class="preview_exp">
+    <h2>Expériences</h2>
+    <div class="preview-exp-form" ng-repeat="experience in experiences">
+        <div class="preview-name">{{experience.name}}</div>
+        <span class="preview-date">{{experience.date_deb}} -
+        {{experience.date_fin}}</span>
+        <span class="preview-description">{{experience.content}}</span>
+    </div>
+</div>
+<div class="preview_formation">
+    <h2>Formation</h2>
+    <div class="preview-exp-form" ng-repeat="formation in formations">
+        <div class="preview-name">{{formation.name}}</div>
+        <span class="preview-date">{{formation.date_deb }} -
+        {{formation.date_fin}}</span>
+        <span class="preview-description">{{formation.content}}</span>
+    </div>
+</div>
+<div class="preview_skill">
+    <h2>Compétences</h2>
+    <span ng-repeat="skill in skills">
+        {{skill.content}}
+    </span>
+</div>
+<div class="preview_hobby">
+    <h2>Loisirs</h2>
+    <div ng-repeat="hobby in hobbies">
+        {{hobby.content}}
+    </div>
+</div>

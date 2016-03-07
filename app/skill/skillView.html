@@ -1,0 +1,7 @@
+<div class="skill section">
+    <h2>Compétences</h2>
+    <div ng-repeat="skill in skills">
+        <input type="text" ng-model="skill.content" ng-change="change()">
+    </div>
+    <div class="bouton-add icon-plus" ng-click="add()"></div>
+</div>
